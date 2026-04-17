@@ -1,3 +1,114 @@
 body {
     margin: 0;
+
+    font-family: "Smythe", system-ui;
+    font-style: normal;
 } 
+
+header{
+    position: relative;
+}
+
+#header-banner-img{
+    width: 600px;
+    height: 167px;
+}
+
+#header-text{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    color: whitesmoke;
+    left: 46px;
+    top: 56px;
+    
+}
+#header-title,
+#header-slogan{
+    font-weight: 100;
+    margin: 0;
+}
+
+#header-title{
+    font-size: 39px;
+}
+
+#header-slogan{
+    font-size: 22px;
+}
+
+/* START - This is for the menu item */
+#menu-items-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.menu-item,.menu-item-description{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-item{
+    width: 508px;
+    height: 140px;
+    border-bottom: #D2D2D2 solid 1px;
+}
+.menu-item-description{
+    gap: 10px;
+}
+.menu-item-description-text{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.menu-item-name,
+.menu-item-ingredients,
+.menu-item-price{
+    margin: 0;
+    padding: 0;
+    font-weight: 100;
+}
+.menu-item-ingredients{
+    color: #8B8B8B;
+    padding-bottom: 7px;
+}
+.menu-item-price{
+    font-size: 20px;
+}
+
+.menu-item-description-img{
+    width: 80px;
+    height: 80px;
+    
+}
+
+.menu-item-button{
+    font-family: "Inter";
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 30px;
+    border-color: #DEDEDE;
+    font-size: 32px;
+    border-width: 2px;
+    border-style: solid;
+    display: flex;
+    justify-content: center;
+    font-weight: 200;
+}
+
+.menu-item-button:hover{
+    transition: background-color 0.5s ease;
+    background-color: rgb(206, 245, 147);
+}
+
+.menu-item-button:active{
+    background-color: rgb(10, 121, 0);
+}
+
+
+/* END - This is for the menu item */

@@ -1,8 +1,61 @@
 <html>
     <head>
-       <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     </head>
     <body>
+        <header>
+            <img id="header-banner-img" src="./images/banner.png"/>
+            <div id="header-text">
+                <h1 id="header-title">Jimmy's Diner</h1>
+                <h2 id="header-slogan">The best burgers and pizzas in town.</h2>
+            </div>
+
+        </header>
+        <main>
+            <section id="menu-items-section">
+                <!-- This is where the menu items from the data will go -->
+                <div class="menu-item">
+                    <div class="menu-item-description">
+                        <img class="menu-item-description-img" src="./images/pizza.png">
+                        <div class="menu-item-description-text">
+                            <h1 class="menu-item-name">Pizza</h1>
+                            <p class="menu-item-ingredients">pepperoni, mushroom, mozarella</p>
+                            <h2 class="menu-item-price">$14</h2>
+                        </div>
+                    </div>
+                    <button class="menu-item-button">+</button>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-item-description">
+                        <img class="menu-item-description-img" src="./images/pizza.png">
+                        <div class="menu-item-description-text">
+                            <h1 class="menu-item-name">Pizza</h1>
+                            <p class="menu-item-ingredients">pepperoni, mushroom, mozarella</p>
+                            <h2 class="menu-item-price">$14</h2>
+                        </div>
+                    </div>
+                    <button class="menu-item-button">+</button>
+                </div>
+
+            </section>
+            <section id="pay-section">
+                <h1>Your order</h1>
+                <ul>
+                    <!-- This is where the menu items selected will go -->
+                </ul>
+                <button id="submit-btn">Complete order</button>
+            </section>
+            <section id="purchase-pop-up">
+
+            </section>
+        </main>
 	<script src="index.js"></script>
     </body>
 </html>
