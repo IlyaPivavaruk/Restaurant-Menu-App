@@ -9,6 +9,12 @@ header{
     position: relative;
 }
 
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 #header-banner-img{
     width: 600px;
     height: 167px;
@@ -112,3 +118,50 @@ header{
 
 
 /* END - This is for the menu item */
+
+/* START - This is for the pay section at the bottom */
+
+#pay-section{
+    width: 508px;
+    height: 319px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#pay-item-lines{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pay-item-line{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* Pay button style */
+#confirm-btn{
+    background-color: #16DB99;
+    border: none;
+    border-radius: 3px;
+    font-family: Verdana;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 20px 0;
+    width: 100%;
+}
+
+#confirm-btn:hover{
+    transition: background-color 0.5s ease;
+    background-color: #109c6d;
+}
+
+#confirm-btn:active{
+    background-color: rgb(10, 101, 2);
+}
+/* END - This is for the pay section at the bottom */
