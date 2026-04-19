@@ -127,21 +127,59 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
+}
+
+#pay-section > h1{
+    align-self: center;
+    font-weight: normal;
 }
 
 #pay-item-lines{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
+    padding: 0;
+    font-size: 28px;
 }
 
 .pay-item-line{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    height: 40px;
 }
+
+.pay-item-line-price{
+    font-size: 20px;
+}
+
+.pay-item-line-left{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    
+}
+
+.pay-item-remove-btn{
+    background: none;
+    border: none;
+    color: #BBBBBB;
+    height: 20px;
+    margin: 0;
+    padding: 0;
+    padding-top: 5px;
+}
+
+.pay-item-remove-btn:hover{
+    cursor: pointer;
+    text-decoration:underline;
+}
+
 
 /* Pay button style */
 #confirm-btn{
