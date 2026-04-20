@@ -74,11 +74,11 @@
                 <button id="confirm-btn">Complete order</button>
             </section>
             <form id="card-pop-up">
-                <h1>Enter Card Details</h1>
-                <input type="text"/>
-                <input type="number"/>
-                <input type="number"/>
-                <button>Pay</button>
+                <h1 id="card-pop-up-title">Enter Card Details</h1>
+                <input id="card-pop-up-name" type="text" placeholder="Enter your name" required/>
+                <input id="card-pop-up-card" type="text" inputmode="numeric" placeholder="Enter card number" required/>
+                <input id="card-pop-up-cvv" type="text" inputmode="numeric" placeholder="Enter CVV" required/>
+                <button id="card-pop-up-pay-btn">Pay</button>
             </form>
         </main>
 	<script src="index.js"></script>

@@ -182,7 +182,8 @@ main{
 
 
 /* Pay button style */
-#confirm-btn{
+#confirm-btn,
+#card-pop-up-pay-btn{
     background-color: #16DB99;
     border: none;
     border-radius: 3px;
@@ -194,12 +195,14 @@ main{
     width: 100%;
 }
 
-#confirm-btn:hover{
+#confirm-btn:hover,
+#card-pop-up-pay-btn:hover{
     transition: background-color 0.5s ease;
     background-color: #109c6d;
 }
 
-#confirm-btn:active{
+#confirm-btn:active,
+#card-pop-up-pay-btn:active{
     background-color: rgb(10, 101, 2);
 }
 /* END - This is for the pay section at the bottom */
@@ -208,12 +211,37 @@ main{
 /* START - Card details form */
 
 #card-pop-up{
-    display: flex;
+    position: absolute;
+    background-color: white;
+    display: none; /* this will be set to none or flex*/
     flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
     width: 524px;
     height: 542px;
     box-shadow: 0 0 100px 10px black;
+    padding: 0 30px;
+    gap: 20px;
 }
 
+#card-pop-up-title{
+    font-family: Verdana;
+    font-size: 24;
+    font-weight: bold;
+    align-self: center;
+}
 
+#card-pop-up-name,
+#card-pop-up-card,
+#card-pop-up-cvv{
+    height:71px;
+    font-family: Verdana;
+    font-size: 20;
+    border-radius: 3px;
+    padding-left: 30px;
+}
+
+#card-pop-up-pay-btn{
+    margin-top: 30px;
+}
 /* END - Card details form */
