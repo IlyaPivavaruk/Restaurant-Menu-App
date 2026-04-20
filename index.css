@@ -203,3 +203,17 @@ main{
     background-color: rgb(10, 101, 2);
 }
 /* END - This is for the pay section at the bottom */
+
+
+/* START - Card details form */
+
+#card-pop-up{
+    display: flex;
+    flex-direction: column;
+    width: 524px;
+    height: 542px;
+    box-shadow: 0 0 100px 10px black;
+}
+
+
+/* END - Card details form */
