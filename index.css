@@ -86,10 +86,13 @@ main{
     font-size: 20px;
 }
 
-.menu-item-description-img{
+.menu-item-description-emoji{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    line-height: 1;
     width: 80px;
-    height: 80px;
-    
 }
 
 .menu-item-button{
@@ -121,9 +124,8 @@ main{
 
 /* START - This is for the pay section at the bottom */
 
-#pay-section{
+.pay-section{
     width: 508px;
-    height: 319px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -149,7 +151,7 @@ main{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 40px;
+    
 }
 
 .pay-item-line-price{
@@ -161,18 +163,26 @@ main{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 15px;
-    
+    gap: 10px;
+}
+
+.pay-item-line-name{
+    padding: 0;
+    margin: 0;
 }
 
 .pay-item-remove-btn{
-    background: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     border: none;
     color: #BBBBBB;
-    height: 20px;
+    background-color: white;
     margin: 0;
-    padding: 0;
-    padding-top: 5px;
+    padding: 5px 10px;
+    vertical-align: middle;
+    line-height: normal;
+    
 }
 
 .pay-item-remove-btn:hover{
@@ -204,6 +214,12 @@ main{
 #confirm-btn:active,
 #card-pop-up-pay-btn:active{
     background-color: rgb(10, 101, 2);
+}
+
+.total{
+    border-top: #000000 solid 2px;
+    margin-top: 20px;
+    padding-top: 10px;
 }
 /* END - This is for the pay section at the bottom */
 
@@ -245,3 +261,8 @@ main{
     margin-top: 30px;
 }
 /* END - Card details form */
+
+
+.hide{
+    display: none;
+}
