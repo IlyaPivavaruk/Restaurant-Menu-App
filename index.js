@@ -6,9 +6,22 @@ menuItemsSec.addEventListener('click', HandleMenuItemsClick)
 const payItemLines = document.getElementById('pay-item-lines')
 payItemLines.addEventListener('click', HandleRemoveFromCart)
 
+const confirmButton = document.getElementById('confirm-btn')
+confirmButton.addEventListener('click', HandleConfirmButtonClick)
+
 const paySection = document.getElementById('pay-section')
 const menuItems = []
 const cartItems = []
+
+const cardPopUpOverlay = document.getElementById('card-pop-up-overlay')
+const cardPopUp = document.getElementById('card-pop-up')
+cardPopUp.addEventListener('submit', HandlePayButtonClick)
+
+//const payButton = document.getElementById('card-pop-up-pay-btn')
+//payButton.addEventListener('click', HandlePayButtonClick)
+
+const confirmMessage = document.getElementById('confirm-message')
+
 
 
 class MenuItem{
@@ -27,12 +40,36 @@ function HandleMenuItemsClick(event){
         console.log(btnId)
         cartItems.push(menuItems.filter(item => parseInt(item.id) === parseInt(btnId))[0])
 
-
+        confirmMessage.replaceChildren()
 
         RenderCartItems()
     }
     
     
+}
+// Called when the complete order button is pressed
+function HandleConfirmButtonClick(){
+    cardPopUpOverlay.classList.toggle('hide')
+    cardPopUp.classList.toggle('hide')
+
+}
+
+function HandlePayButtonClick(event){
+    event.preventDefault()
+
+    const playerName = document.getElementById('card-pop-up-name')
+    const cardNum = document.getElementById('card-pop-up-card')
+    const ccvNum = document.getElementById('card-pop-up-ccv')
+
+    const newChild = document.createElement('h1')
+    newChild.textContent = `Thanks, ${playerName.value}! Your order is on its way!`
+    confirmMessage.appendChild(newChild)
+    cardPopUp.classList.toggle('hide')
+    cardPopUpOverlay.classList.toggle('hide')
+    cartItems.length = 0
+    cardPopUp.reset()
+
+    RenderCartItems()
 }
 
 function RenderCartItems(){

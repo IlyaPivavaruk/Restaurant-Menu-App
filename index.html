@@ -28,13 +28,18 @@
                 </ul>
                 <button id="confirm-btn">Complete order</button>
             </section>
-            <form id="card-pop-up">
+            <div class="card-pop-up-overlay hide" id="card-pop-up-overlay"></div>
+            <form class="card-pop-up hide" id="card-pop-up">
                 <h1 id="card-pop-up-title">Enter Card Details</h1>
                 <input id="card-pop-up-name" type="text" placeholder="Enter your name" required/>
                 <input id="card-pop-up-card" type="text" inputmode="numeric" placeholder="Enter card number" required/>
                 <input id="card-pop-up-cvv" type="text" inputmode="numeric" placeholder="Enter CVV" required/>
                 <button id="card-pop-up-pay-btn">Pay</button>
             </form>
+            <div id="confirm-message">
+                <!-- This is where the confirmation message will appear -->
+                <!-- <h1>Thanks, James! Your order is on its way!</h1> -->
+            </div>
         </main>
 	<script src="index.js" type="module"></script>
     </body>
